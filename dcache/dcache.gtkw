@@ -1,0 +1,130 @@
+[*]
+[*] GTKWave Analyzer v3.3.86 (w)1999-2017 BSI
+[*] Thu Aug 13 19:08:09 2020
+[*]
+[dumpfile] "(null)"
+[savefile] "/home/eva/verification/dcache/dcache.gtkw"
+[timestart] 0
+[size] 2560 1369
+[pos] -1 -1
+*-4.579284 32 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] Veri.
+[treeopen] Veri.dvr.
+[treeopen] Veri.dvr.dcache.
+[treeopen] Veri.dvr.dcache.query.
+[sst_width] 274
+[signals_width] 547
+[sst_expanded] 1
+[sst_vpaned_height] 530
+@28
+Veri.clock
+Veri.reset
+@800200
+-golden_data
+@1000200
+-golden_data
+@800200
+-dcache_request
+@22
+Veri.dvr.dcache.io_request_bits_physicalIndex[11:0]
+Veri.dvr.dcache.io_request_bits_tag[19:0]
+Veri.dvr.dcache.io_request_bits_writeData[31:0]
+Veri.dvr.dcache.io_request_bits_writeMask[3:0]
+@28
+Veri.dvr.dcache.io_request_ready
+Veri.dvr.dcache.io_request_valid
+@1000200
+-dcache_request
+@800200
+-dcache_out
+@28
+Veri.dvr.dcache.io_commit
+@22
+Veri.dvr.dcache.io_readData[31:0]
+@28
+Veri.dvr.dcache.query.qState[2:0]
+@1000200
+-dcache_out
+@c00200
+-io_axi
+@22
+Veri.dvr.dcache.query.io_axi_ar_bits_addr[31:0]
+@28
+Veri.dvr.dcache.query.io_axi_ar_ready
+Veri.dvr.dcache.query.io_axi_ar_valid
+@22
+Veri.dvr.dcache.query.io_axi_r_bits_data[31:0]
+@28
+Veri.dvr.dcache.query.io_axi_r_bits_last
+Veri.dvr.dcache.query.io_axi_r_ready
+Veri.dvr.dcache.query.io_axi_r_valid
+@1401200
+-io_axi
+@800200
+-hit_info
+@28
+Veri.dvr.dcache.query.hitInBank
+Veri.dvr.dcache.query.writeQueue_io_resp_valid
+Veri.dvr.dcache.query.hitInRefillBuffer
+@1000200
+-hit_info
+@28
+Veri.dvr.dcache.query.io_queryCommit_readDataValid
+Veri.dvr.dcache.query.lruWayReg
+@c00200
+-dequeue_data
+@28
+Veri.dvr.dcache.query.writeQueue_io_enqueue_bits_addr_index
+@22
+Veri.dvr.dcache.query.writeQueue_io_enqueue_bits_addr_tag[27:0]
+@28
+Veri.dvr.dcache.query.writeQueue_io_enqueue_ready
+Veri.dvr.dcache.query.writeQueue_io_enqueue_valid
+@1401200
+-dequeue_data
+@800200
+-fetch_query
+@28
+Veri.dvr.dcache.query.io_fetchQuery_bankIndex
+Veri.dvr.dcache.query.io_fetchQuery_index
+@22
+Veri.dvr.dcache.query.io_fetchQuery_phyTag[27:0]
+@28
+Veri.dvr.dcache.query.io_fetchQuery_valid
+@1000200
+-fetch_query
+@28
+Veri.dvr.dcache.query.io_writeBack_valid
+@c00200
+-axi_w
+@22
+Veri.dvr.dcache.query.io_axi_aw_bits_addr[31:0]
+@28
+Veri.dvr.dcache.query.io_axi_aw_ready
+Veri.dvr.dcache.query.io_axi_aw_valid
+Veri.dvr.dcache.query.io_axi_b_ready
+Veri.dvr.dcache.query.io_axi_b_valid
+@22
+Veri.dvr.dcache.query.io_axi_w_bits_data[31:0]
+@28
+Veri.dvr.dcache.query.io_axi_w_bits_last
+Veri.dvr.dcache.query.io_axi_w_ready
+Veri.dvr.dcache.query.io_axi_w_valid
+@1401200
+-axi_w
+@800200
+-write_queue_query_hit
+@28
+Veri.dvr.dcache.query.writeQueue.isQueryHit
+Veri.dvr.dcache.query.writeQueue.queryHitPos
+Veri.dvr.dcache.query.writeQueue.queryHitVec_0
+Veri.dvr.dcache.query.writeQueue.queryHitVec_1
+@1000200
+-write_queue_query_hit
+@29
+Veri.dvr.dcache.query.writeQueue.size[1:0]
+@28
+Veri.dvr.dcache.query.writeQueue.headPTR
+Veri.dvr.dcache.query.writeQueue.tailPTR
+[pattern_trace] 1
+[pattern_trace] 0
