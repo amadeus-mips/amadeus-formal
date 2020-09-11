@@ -1,0 +1,17 @@
+[options]
+mode prove
+depth 20
+
+[engines]
+smtbmc --progress
+
+[script]
+read -verific
+verific -sv verifyFIFO.sv
+verific -sv InstructionFIFO.v
+verific -import verifyFIFO
+prep -top verifyFIFO
+
+[files]
+verifyFIFO.sv
+InstructionFIFO.v

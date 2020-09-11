@@ -1,0 +1,21 @@
+[options]
+mode bmc
+depth 25
+
+[engines]
+smtbmc --nopresat boolector
+
+[script]
+read -verific
+verific -sv veri.sv
+verific -sv ICacheVeri.v
+verific -sv axi_ar_port_fv.sv
+verific -sv GoldenICache.v
+verific -import -extnets -all Veri
+prep -top Veri
+
+[files]
+veri.sv
+ICacheVeri.v
+GoldenICache.v
+axi_ar_port_fv.sv

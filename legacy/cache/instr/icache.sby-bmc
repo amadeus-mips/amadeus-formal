@@ -1,0 +1,17 @@
+[options]
+mode bmc
+depth 50
+
+[engines]
+smtbmc --nomem --progress
+
+[script]
+read -verific
+verific -sv icachVeri.sv
+verific -sv -DRANDOMIZE=0 ICacheVeri.v
+verific -import -flatten -all -fullinit icachVeri
+prep -top icachVeri
+
+[files]
+ICacheVeri.v
+icachVeri.sv

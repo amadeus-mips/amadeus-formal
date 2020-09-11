@@ -1,0 +1,17 @@
+[options]
+mode bmc
+depth 35
+
+[engines]
+smtbmc --progress
+
+[script]
+read -verific
+verific -sv icache.sv
+verific -sv -DRANDOMIZE=0 InstrCache.v
+verific -import -all -fullinit icache_vip
+prep -top icache_vip
+
+[files]
+InstrCache.v
+icache.sv

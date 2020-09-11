@@ -1,0 +1,18 @@
+[options]
+mode prove
+
+[engines]
+abc pdr
+
+[script]
+read -verific
+verific -sv veri.sv
+verific -sv ICacheVeri.v
+verific -sv GoldenICache.v
+verific -import -all Veri
+prep -top Veri
+
+[files]
+veri.sv
+ICacheVeri.v
+GoldenICache.v

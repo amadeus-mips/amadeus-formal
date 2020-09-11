@@ -1,0 +1,28 @@
+[options]
+mode bmc
+depth 50
+
+[engines]
+# aiger suprove
+# smtbmc --stbv boolector --sat-engine=cms --sat-engine-n-threads=8
+smtbmc --nopresat --progress --stbv boolector
+[script]
+read -verific
+verific -sv VeriDCache.v
+verific -sv GoldenDCache.v
+verific -sv veri.sv
+verific -sv axi_write_port_fv.sv
+verific -sv comparator_fv.sv
+verific -sv query_top_fv.sv
+verific -sv write_queue_fv.sv
+verific -import -extnets -all Veri
+prep -top Veri
+
+[files]
+veri.sv
+write_queue_fv.sv
+query_top_fv.sv
+comparator_fv.sv
+VeriDCache.v
+GoldenDCache.v
+axi_write_port_fv.sv
